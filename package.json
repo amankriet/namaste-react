@@ -1,5 +1,38 @@
 {
   "dependencies": {
-    "eslint-config-react-app": "^7.0.1"
-  }
+    "eslint-config-react-app": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "namaste-react",
+  "description": "Learning ReactJs",
+  "version": "1.0.0",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amankriet/namaste-react.git"
+  },
+  "keywords": [
+    "React",
+    "reactjs",
+    "amankriet",
+    "aman",
+    "aman",
+    "kumar"
+  ],
+  "author": "Aman Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amankriet/namaste-react/issues"
+  },
+  "homepage": "https://github.com/amankriet/namaste-react#readme",
+  "browserslist": [
+    "last 5 versions"
+  ]
 }
