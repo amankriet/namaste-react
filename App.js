@@ -1,23 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is Namaste React!"),
-    React.createElement("h2", {}, "Learning react!"),
-  ])
+// JSX => React.createElement => ReactElement-JS Object => HTMLElement(render)
+
+const Description = () => (
+  <p className="description">I am now learning React</p>
 );
 
-const heading = React.createElement(
-  "h1",
-  {
-    id: "heading",
-  },
-  "Hello World from React!!"
-);
+const course = <p>Course Name: Namaste React</p>;
+
+let episodeNumber = 2;
+
+const Heading = () => {
+  return (
+    <div className="container">
+      <h1 id="heading">Namaste React</h1>
+      <Description />
+      {course}
+      {`Episode = ${episodeNumber}`}
+    </div>
+  );
+};
+
+// console.log(Heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<Heading />);
